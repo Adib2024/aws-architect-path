@@ -126,4 +126,82 @@ C.group = [
   s("Pair a beginner with someone more technical. The beginner explains the analogy, the other explains the commands.", "Pasangkan pemula dengan seseorang yang lebih teknikal. Pemula menerangkan analogi, yang lain menerangkan arahan."),
   s("Use the language switch (EN / BM) so everyone can read in the language they're most comfortable with.", "Gunakan suis bahasa (EN / BM) supaya semua orang boleh membaca dalam bahasa yang paling selesa.")
 ];
+
+/* ---------- AI Engineer Path ---------- */
+Object.assign(C.ui.en, {
+  trackCloud: "Cloud", trackAI: "AI", aiNav: "AI overview & roadmap", aiCapstone: "AI capstone",
+  mathTitle: "The math, worked with numbers", mathChip: "formulas + worked examples", worked: "Worked example",
+  liveTitle: "Try it live", liveChip: "interactive calculator", nbOpen: "Open in Colab", nbView: "View notebook on GitHub",
+  computeTag: "Compute & memory", computeH: "What it costs to run", pitfallTag: "Pitfalls & debugging", pitfallH: "What goes wrong in practice",
+  aiEyebrow: "AI engineering track · from tensors to your own GPT",
+  aiH1a: "Understand AI ", aiH1b: "down to the math", aiH1c: ", then build it in PyTorch.",
+  aiStart: "Start at A01", aiFModules: "modules", aiFHours: "math + code", aiFCalcs: "live calculators", aiFNbs: "PyTorch notebooks",
+  aiEndUp: "Where you will end up", aiEndUpLede: "A GPT you wrote yourself, trained on Malay text on AWS, fine-tuned, quantised and served. Press play.",
+  aiHowTitle: "How each AI module works", aiPrereqTitle: "What you need", aiHwTitle: "Hardware & budget", aiLinkTitle: "How this connects to the cloud track",
+  mathNote: "Formulas render with MathJax. If they show as raw LaTeX, your network blocked the math library; the content is still readable.",
+  tryAI: "New: AI Engineer Path", tryAIText: "Go beyond \"what is AI\": tensors, backprop, attention and your own GPT, with the math worked in numbers and runnable PyTorch.", tryAIBtn: "Open the AI track →",
+  phaseAI: "AI"
+});
+Object.assign(C.ui.ms, {
+  trackCloud: "Cloud", trackAI: "AI", aiNav: "Gambaran & peta laluan AI", aiCapstone: "Capstone AI",
+  mathTitle: "Matematik, dengan contoh nombor", mathChip: "formula + contoh kiraan", worked: "Contoh kiraan",
+  liveTitle: "Cuba secara langsung", liveChip: "kalkulator interaktif", nbOpen: "Buka dalam Colab", nbView: "Lihat notebook di GitHub",
+  computeTag: "Pengkomputeran & memori", computeH: "Kos untuk menjalankannya", pitfallTag: "Perangkap & nyahpepijat", pitfallH: "Apa yang biasa silap",
+  aiEyebrow: "Laluan kejuruteraan AI · dari tensor hingga GPT anda sendiri",
+  aiH1a: "Fahami AI ", aiH1b: "hingga ke matematiknya", aiH1c: ", kemudian bina dalam PyTorch.",
+  aiStart: "Mula di A01", aiFModules: "modul", aiFHours: "matematik + kod", aiFCalcs: "kalkulator langsung", aiFNbs: "notebook PyTorch",
+  aiEndUp: "Ke mana anda akan sampai", aiEndUpLede: "GPT yang anda tulis sendiri, dilatih dengan teks Bahasa Melayu di AWS, ditala halus, dikuantisasi dan dihidangkan. Tekan main.",
+  aiHowTitle: "Cara setiap modul AI berfungsi", aiPrereqTitle: "Apa yang anda perlukan", aiHwTitle: "Perkakasan & bajet", aiLinkTitle: "Kaitan dengan laluan cloud",
+  mathNote: "Formula dipaparkan dengan MathJax. Jika ia kelihatan sebagai LaTeX mentah, rangkaian anda menyekat pustaka matematik; kandungan masih boleh dibaca.",
+  tryAI: "Baharu: Laluan Jurutera AI", tryAIText: "Lebih daripada \"apa itu AI\": tensor, backprop, attention dan GPT anda sendiri, dengan matematik dikira menggunakan nombor dan PyTorch yang boleh dijalankan.", tryAIBtn: "Buka laluan AI →",
+  phaseAI: "AI",
+  techNoteAI: "Bahagian teknikal modul AI (matematik, kod, kalkulator, soalan) kekal dalam Bahasa Inggeris, bahasa kertas kajian dan dokumentasi. Kotak \"Dalam bahasa mudah\" dan glosari tersedia dalam Bahasa Melayu."
+});
+C.ui.en.techNoteAI = "";
+
+C.aiPhases = [
+  { n: "A1", title: s("Learning machinery", "Jentera pembelajaran"), weeks: s("weeks 1–4", "minggu 1–4"), blurb: s("Tensors, losses, optimisers and backprop: the maths every model shares.", "Tensor, fungsi kerugian, pengoptimum dan backprop: matematik yang dikongsi setiap model.") },
+  { n: "A2", title: s("Deep networks", "Rangkaian mendalam"), weeks: s("weeks 5–6", "minggu 5–6"), blurb: s("Why depth is hard and how init, normalisation and residuals fix it; CNNs and RNNs.", "Kenapa kedalaman sukar dan bagaimana pengawalan, normalisasi dan residual mengatasinya; CNN dan RNN.") },
+  { n: "A3", title: s("Transformers from scratch", "Transformer dari kosong"), weeks: s("weeks 7–9", "minggu 7–9"), blurb: s("Tokens, attention and a complete GPT you write and train yourself.", "Token, attention dan GPT lengkap yang anda tulis dan latih sendiri.") },
+  { n: "A4", title: s("LLMs in production", "LLM dalam produksi"), weeks: s("weeks 10–12", "minggu 10–12"), blurb: s("Training at scale, fine-tuning with LoRA and DPO, quantisation and serving on AWS.", "Latihan berskala, penalaan halus dengan LoRA dan DPO, kuantisasi dan menghidangkan model di AWS.") }
+];
+C.aiIntro = s(
+  "Twelve modules that take you from tensors to a GPT you write, train, fine-tune and serve yourself. Every module derives the key formulas, works them through with real numbers, lets you change those numbers in a live calculator, and ends with a runnable PyTorch notebook.",
+  "Dua belas modul yang membawa anda dari tensor hingga GPT yang anda tulis, latih, tala halus dan hidangkan sendiri. Setiap modul menerbitkan formula utama, mengiranya dengan nombor sebenar, membolehkan anda mengubah nombor itu dalam kalkulator langsung, dan berakhir dengan notebook PyTorch yang boleh dijalankan."
+);
+C.aiHow = [
+  [s("The math", "Matematik"), s("Each formula derived, then worked line by line with real numbers.", "Setiap formula diterbitkan, kemudian dikira baris demi baris dengan nombor sebenar.")],
+  [s("Try it live", "Cuba secara langsung"), s("Change inputs in a calculator and watch results recompute.", "Ubah input dalam kalkulator dan lihat hasil dikira semula.")],
+  [s("See it flow", "Lihat alirannya"), s("Animated forward pass, backward pass and architecture.", "Animasi laluan ke hadapan, laluan ke belakang dan seni bina.")],
+  [s("PyTorch notebook", "Notebook PyTorch"), s("Runnable code that reproduces every number, one click to Colab.", "Kod boleh dijalankan yang menghasilkan semula setiap nombor, satu klik ke Colab.")],
+  [s("Check yourself", "Uji diri"), s("Numeric questions with worked explanations.", "Soalan berangka dengan penerangan kiraan.")]
+];
+C.aiPrereqs = [
+  s("**Math:** linear algebra (matrix products, transposes), multivariable calculus (partial derivatives, chain rule) and basic probability. The modules use them; they don't re-teach them.", "**Matematik:** algebra linear (pendaraban matriks, transpos), kalkulus multivariat (terbitan separa, petua rantai) dan kebarangkalian asas. Modul menggunakannya tetapi tidak mengajarnya semula."),
+  s("**Python:** functions, classes, list comprehensions. NumPy experience helps.", "**Python:** fungsi, kelas, list comprehension. Pengalaman NumPy membantu."),
+  s("**A Google account** for free Colab GPUs (A01–A09), or `pip install torch` locally.", "**Akaun Google** untuk GPU Colab percuma (A01–A09), atau `pip install torch` di komputer sendiri."),
+  s("**An AWS account** for A10–A12 and the capstone (cloud lessons 0.3, 01, 02 and 16 cover setting it up safely).", "**Akaun AWS** untuk A10–A12 dan capstone (pelajaran cloud 0.3, 01, 02 dan 16 menerangkan cara menyediakannya dengan selamat).")
+];
+C.aiHardware = [
+  s("A01–A09 run on Colab's free T4 GPU or a laptop CPU (slower). No cloud bill.", "A01–A09 berjalan pada GPU T4 percuma Colab atau CPU komputer riba (lebih perlahan). Tiada bil cloud."),
+  s("A10–A12 use AWS GPUs: a g5.xlarge (1× A10G, 24 GB) costs roughly US$1 per hour on demand; ml.g5.12xlarge (4× A10G) roughly US$7. Check current prices for your Region.", "A10–A12 menggunakan GPU AWS: g5.xlarge (1× A10G, 24 GB) berharga kira-kira US$1 sejam atas permintaan; ml.g5.12xlarge (4× A10G) kira-kira US$7. Semak harga semasa untuk Region anda."),
+  s("New accounts usually have a GPU quota of 0. Request a G-instance quota increase in **Service Quotas** a few days before A10.", "Akaun baharu biasanya mempunyai kuota GPU 0. Mohon peningkatan kuota instance G dalam **Service Quotas** beberapa hari sebelum A10."),
+  s("Budget for the whole track including the capstone: under US$50 if you stop instances promptly.", "Bajet untuk keseluruhan laluan termasuk capstone: bawah US$50 jika anda menghentikan instance dengan segera.")
+];
+C.aiLinks = [
+  s("Before A10, do cloud modules **02 IAM**, **05 Storage** and **16 Cost**: SageMaker jobs need a role, data lives in S3, and GPUs are the easiest way to overspend.", "Sebelum A10, selesaikan modul cloud **02 IAM**, **05 Storage** dan **16 Cost**: kerja SageMaker memerlukan role, data disimpan dalam S3, dan GPU ialah cara paling mudah untuk terlebih belanja."),
+  s("Module **18 Data & AI** covers Bedrock and RAG from the architecture side; A12 covers what happens inside the model you call.", "Modul **18 Data & AI** merangkumi Bedrock dan RAG dari sudut seni bina; A12 menerangkan apa yang berlaku di dalam model yang anda panggil."),
+  s("**AWS Certified Machine Learning Engineer – Associate** overlaps with A10–A12 (SageMaker training, deployment, monitoring).", "**AWS Certified Machine Learning Engineer – Associate** bertindih dengan A10–A12 (latihan, penghantaran dan pemantauan SageMaker).")
+];
+C.aiSchedule = {
+  cols: [s("Weeks", "Minggu"), s("Modules", "Modul"), s("You can now…", "Kini anda boleh…")],
+  rows: [
+    ["1–2", "A01 Tensors, A02 Softmax & CE", s("Predict shapes and FLOPs; derive and implement the classification loss", "Meramal bentuk dan FLOPs; menerbitkan dan melaksanakan fungsi kerugian klasifikasi")],
+    ["3–4", "A03 Optimizers, A04 Backprop", s("Write Adam and an autograd engine from scratch", "Menulis Adam dan enjin autograd dari kosong")],
+    ["5–6", "A05 Deep nets, A06 CNN & RNN", s("Make 50-layer networks trainable; train a CNN", "Menjadikan rangkaian 50 lapisan boleh dilatih; melatih CNN")],
+    ["7–9", "A07 Tokens, A08 Attention, A09 GPT", s("Write and train a GPT; count its parameters and FLOPs", "Menulis dan melatih GPT; mengira parameter dan FLOPs-nya")],
+    ["10–12", "A10 Scale, A11 Fine-tuning, A12 Serving", s("Plan a training run, LoRA-tune a model and serve it on AWS", "Merancang larian latihan, menala model dengan LoRA dan menghidangkannya di AWS")],
+    ["13–15", "AI Capstone", s("BahasaGPT-mini: your own Malay language model, end to end", "BahasaGPT-mini: model bahasa Melayu anda sendiri, dari awal hingga akhir")]
+  ]
+};
 })(window.COURSE);

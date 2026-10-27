@@ -299,6 +299,85 @@ svg .packet.async{fill:var(--k-int)}
 .gitem .alt{color:var(--muted);font-size:12.5px}
 .gitem a{font-size:12.5px}
 
+
+/* ---------- tracks, AI banner ---------- */
+.tracks{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;background:var(--sunk);border-radius:10px;margin-bottom:6px}
+.tracks a{display:block!important;text-align:center;padding:7px 6px!important;border-radius:7px;font-weight:600;font-size:13.5px}
+.tracks a.on{background:var(--surface)!important;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.aibanner{display:grid;gap:4px;text-decoration:none;color:var(--ink);border:1px solid var(--k-int);border-radius:14px;padding:16px 20px;background:color-mix(in srgb,var(--k-int) 8%,var(--surface))}
+.aibanner span:not(.eyebrow){font-size:15px}
+.aibanner b{font:700 15px var(--display);color:var(--k-int)}
+.aibanner .eyebrow{color:var(--k-int)}
+/* ---------- math cards ---------- */
+.maths{display:grid;gap:14px}
+.mcard{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;display:grid;gap:10px;min-width:0}
+.mcard h3{font-size:17px}
+.mcard > p{margin:0;font-size:14.5px}
+.mdisp{overflow-x:auto;padding:6px 2px;-webkit-overflow-scrolling:touch}
+.mdisp .tex{display:block;font-family:var(--mono);font-size:13px;color:var(--ink)}
+.tex{overflow-wrap:anywhere}
+mjx-container{color:var(--ink)}
+mjx-container[display="true"]{margin:.4em 0!important}
+.worked{background:var(--sunk);border-radius:10px;padding:12px 14px;display:grid;gap:8px}
+.worked ol{margin:0;padding-left:20px;display:grid;gap:8px}
+.worked li{font-size:14.5px}
+.worked .wn{display:block;font-size:12.5px;color:var(--muted)}
+/* ---------- calculators ---------- */
+.calc{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0;display:grid;gap:12px}
+.calc-intro{font-size:15px!important}
+.calc-grid{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:18px}
+@media (max-width:760px){.calc-grid{grid-template-columns:minmax(0,1fr)}}
+.calc-ctl{display:grid;gap:10px;align-content:start}
+.calc-out{display:grid;gap:6px;align-content:start;min-width:0}
+.cf{display:grid;gap:4px;font-size:13px;color:var(--muted)}
+.cf span b{color:var(--ink);font-family:var(--mono);font-weight:600}
+.cf input[type=number],.cf select,.cf textarea{font:14px var(--mono);padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);width:100%}
+.cf input[type=range]{width:100%;accent-color:var(--accent)}
+.cf.ck{display:flex;align-items:center;gap:8px;color:var(--ink)}
+.cks{display:flex;flex-wrap:wrap;gap:4px 12px}
+.cks .cf.ck{font-size:13px}
+.btn.sm{padding:6px 12px;font-size:13px}
+.kvr{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.kvr span{color:var(--muted)}
+.kvr b{font:600 13.5px var(--mono);text-align:right;font-variant-numeric:tabular-nums}
+.kvr.hl b{color:var(--accent);font-size:15px}
+.cbar{display:grid;gap:4px;padding:6px 0}
+.cbar-l{display:flex;justify-content:space-between;gap:10px;font-size:13px}
+.cbar-l span{color:var(--muted)}
+.cbar-l b{font:600 13px var(--mono)}
+.cbar-t{height:10px;background:var(--sunk);border-radius:99px;overflow:hidden}
+.cbar-t i{display:block;height:100%;background:var(--accent);border-radius:99px;transition:width .3s}
+.cbar.good .cbar-t i{background:var(--good)} .cbar.warn .cbar-t i{background:var(--pulse)} .cbar.bad .cbar-t i{background:var(--bad)}
+.cbar.c1 .cbar-t i{background:var(--k-compute)} .cbar.c2 .cbar-t i{background:var(--k-net)} .cbar.c3 .cbar-t i{background:var(--k-int)}
+.cpill{display:inline-block;font:600 11.5px var(--mono);padding:2px 8px;border-radius:99px;border:1px solid var(--line);margin-right:6px}
+.cpill.good{border-color:var(--good);color:var(--good)} .cpill.warn{border-color:var(--pulse);color:var(--ink)} .cpill.bad{border-color:var(--bad);color:var(--bad)}
+.cnote{margin:4px 0 0;font-size:12.5px;color:var(--muted)}
+.ccanvas{width:100%;display:block;border-radius:10px;border:1px solid var(--line)}
+.ctbl{width:100%;border-collapse:collapse;font-size:13px}
+.ctbl th,.ctbl td{padding:5px 8px;border-bottom:1px solid var(--line);font-family:var(--mono)}
+.ctbl tr.on td{background:var(--accent-soft)}
+.ctbl td.neg{color:var(--good)} .ctbl td.pos{color:var(--bad)}
+.minibar{position:relative;background:var(--sunk);border-radius:6px;height:20px;min-width:90px}
+.minibar i{position:absolute;inset:0 auto 0 0;background:var(--accent);opacity:.35;border-radius:6px}
+.minibar span{position:relative;padding-left:6px;line-height:20px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px} @media (max-width:520px){.two-col{grid-template-columns:1fr}}
+.calc h5{margin:8px 0 2px;font:600 12px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.mats{display:flex;flex-wrap:wrap;gap:12px}
+.mat{display:grid;gap:4px}
+.mat > span{font:600 12px var(--mono);color:var(--muted)}
+.mat table{border-collapse:collapse;width:auto}
+.mat th{background:none;padding:2px 6px;font-size:11px;border:0}
+.mat td{padding:2px;border:1px solid var(--line);text-align:center;font:13px var(--mono);min-width:54px}
+.mat.out td{padding:5px 6px}
+.mat input{width:52px;border:0;background:transparent;color:var(--ink);font:13px var(--mono);text-align:center;padding:4px 0}
+.merges{margin:0;padding-left:20px;font-size:13px;display:grid;gap:3px;max-height:180px;overflow:auto}
+.merges span{color:var(--muted)}
+.segs{display:grid;gap:6px}
+.segs > div{display:flex;flex-wrap:wrap;gap:3px;align-items:center}
+.segs .cnt{font:12px var(--mono);color:var(--muted);width:30px}
+.tokc{font:12.5px var(--mono);padding:2px 6px;border-radius:5px;background:var(--accent-soft);border:1px solid var(--line)}
+.nb{margin-top:6px;align-items:center}
+.nb code{font-size:12px}
 @media (prefers-reduced-motion: reduce){
   svg .edge.on{animation:none;stroke-dasharray:none}
   svg .node.hit rect{animation:none}
@@ -343,47 +422,74 @@ body{margin:0} img{max-width:100%} :root{padding-top:env(safe-area-inset-top,0px
 <script src="beginner.js"></script>
 <script src="glossary.js"></script>
 <script src="i18n.js"></script>
+<script src="ai-a.js"></script>
+<script src="ai-b.js"></script>
+<script src="ai-widgets.js"></script>
+<script>
+window.MathJax = { tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] }, svg: { fontCache: 'global' },
+  startup: { typeset: false, pageReady() { return MathJax.startup.defaultPageReady().then(() => { const v = document.getElementById('view'); return v ? MathJax.typesetPromise([v]) : null; }); } } };
+</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script>
 <script>
 (function(){
 const C = window.COURSE;
-/* merge: Phase 0 first, then the beginner layer into existing modules */
-C.modules = C.phase0.concat(C.modules);
+/* ---------- assemble both tracks ---------- */
+const cloudMods = C.phase0.concat(C.modules);
 const CLF = {m01:2,m02:1,m03:1,m04:1,m05:1,m06:1,m14:1,m16:2,m19:1};
-C.modules.forEach(m=>{ const b=C.beginner[m.id]; if(b) Object.assign(m,b); if(CLF[m.id]) m.certs=Object.assign({CLF:CLF[m.id]},m.certs); });
+cloudMods.forEach(m=>{ m.track='cloud'; const b=C.beginner[m.id]; if(b) Object.assign(m,b); if(CLF[m.id]) m.certs=Object.assign({CLF:CLF[m.id]},m.certs); });
 if(C.beginner.capstone) C.capstone.simple=C.beginner.capstone.simple;
-const mods = C.modules;
+const aiMods = C.aiModules || [];
+const TR = {
+  cloud:{ mods:cloudMods, phases:C.phases, cap:'capstone', capData:C.capstone, home:'overview' },
+  ai:{ mods:aiMods, phases:C.aiPhases, cap:'ai-capstone', capData:C.aiCapstone, home:'ai' }
+};
 const byId = {};
 let advN=0, zN=0;
-mods.forEach((m,i)=>{ m.index=i; byId[m.id]=m; m.num = m.phase===0 ? '0.'+(++zN) : String(++advN).padStart(2,'0'); });
-const ALL = mods.map(m=>m.id).concat(['capstone']);
+cloudMods.forEach((m,i)=>{ m.index=i; byId[m.id]=m; m.num = m.phase===0 ? '0.'+(++zN) : String(++advN).padStart(2,'0'); });
+aiMods.forEach((m,i)=>{ m.index=i; byId[m.id]=m; m.num='A'+String(i+1).padStart(2,'0'); });
+const allIds = t=>TR[t].mods.map(m=>m.id).concat([TR[t].cap]);
+const REPO = 'Adib2024/aws-architect-path';
 
 const KEY='aws-architect-path.v1';
-let state={done:{},quiz:{},lang:'en',labMode:'console'};
+let state={done:{},quiz:{},lang:'en',labMode:'console',track:'cloud'};
 try{ const raw=localStorage.getItem(KEY); if(raw){ const p=JSON.parse(raw); Object.assign(state,p); state.done=p.done||{}; state.quiz=p.quiz||{}; } }catch(e){}
 function save(){ try{ localStorage.setItem(KEY,JSON.stringify(state)); }catch(e){} }
 const REDUCED = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
 const esc = s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const T = x=>(x && typeof x==='object' && !Array.isArray(x) && 'en' in x) ? (x[state.lang]||x.en) : x;
-const fmt = s=>esc(T(s)).replace(/`([^`]+)`/g,'<code>$1</code>').replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
+/* text formatting: protect \( \) and \[ \] math from the markdown-lite rules, wrap it for MathJax */
+const fmt = s=>{
+  const keep=[]; let t=esc(T(s)).replace(/\\\[[\s\S]+?\\\]|\\\([\s\S]+?\\\)/g,m=>{ keep.push(m); return '\u0000'+(keep.length-1)+'\u0000'; });
+  t=t.replace(/`([^`]+)`/g,'<code>$1</code>').replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
+  return t.replace(/\u0000(\d+)\u0000/g,(_,i)=>'<span class="tex">'+keep[+i]+'</span>');
+};
 const u = k=>(C.ui[state.lang]&&C.ui[state.lang][k]!=null&&C.ui[state.lang][k]!=='') ? C.ui[state.lang][k] : C.ui.en[k];
-const unit = m=>m.phase===0 ? u('lesson') : u('module');
+const unit = m=>(m.track==='cloud'&&m.phase===0) ? u('lesson') : u('module');
 const KIND_NAMES={user:['Client','Klien'],edge:['Edge','Edge'],net:['Networking','Rangkaian'],compute:['Compute','Pengkomputeran'],data:['Data / storage','Data / storan'],sec:['Security & identity','Keselamatan & identiti'],int:['Integration','Integrasi'],ops:['Ops & tooling','Operasi & alatan'],ai:['AI / analytics','AI / analitik'],allow:['Allow','Benarkan'],deny:['Deny','Tolak']};
-const kname = k=>KIND_NAMES[k][state.lang==='ms'?1:0];
+const KIND_AI={user:['Input / output','Input / output'],data:['Tensor / data','Tensor / data'],compute:['Weights / layer','Pemberat / lapisan'],ops:['Operation','Operasi'],sec:['Loss / check','Kerugian / semakan'],int:['Gradient / comm.','Kecerunan / komunikasi'],ai:['Trainable adapter','Penyesuai boleh dilatih'],net:['Network / endpoint','Rangkaian / endpoint'],edge:['Edge','Edge']};
+let curTrack='cloud';
+const kname = k=>((curTrack==='ai'&&KIND_AI[k])?KIND_AI[k]:KIND_NAMES[k])[state.lang==='ms'?1:0];
+function typeset(el){ const MJ=window.MathJax; if(el && MJ && MJ.startup && MJ.startup.promise && MJ.typesetPromise) MJ.startup.promise.then(()=>MJ.typesetPromise([el])).catch(()=>{}); }
 
-/* ---------- glossary linking ---------- */
+/* ---------- glossary linking (scoped per track) ---------- */
 const GL = C.glossary;
-const aliasMap = new Map();
-GL.forEach((e,i)=>{ e.i=i; e.a.forEach(a=>{ const vs=[a]; if(e.ci){ vs.push(a.charAt(0).toUpperCase()+a.slice(1)); vs.push(a.charAt(0).toLowerCase()+a.slice(1)); } vs.forEach(v=>{ if(!aliasMap.has(v)) aliasMap.set(v,e); }); }); });
-const aliasRe = new RegExp('(?<![\\w/.-])('+[...aliasMap.keys()].sort((a,b)=>b.length-a.length).map(a=>a.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')(?![\\w-])','g');
-function linkTerms(root){
-  const used=new Set();
+GL.forEach((e,i)=>e.i=i);
+function buildLinker(track){
+  const map=new Map();
+  GL.forEach(e=>{ if(e.scope!=='both'&&e.scope!==track) return; e.a.forEach(a=>{ const vs=[a]; if(e.ci){ vs.push(a.charAt(0).toUpperCase()+a.slice(1)); vs.push(a.charAt(0).toLowerCase()+a.slice(1)); } vs.forEach(v=>{ if(!map.has(v)) map.set(v,e); }); }); });
+  const re=new RegExp('(?<![\\w/.-])('+[...map.keys()].sort((a,b)=>b.length-a.length).map(a=>a.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|')+')(?![\\w-])','g');
+  return {map,re};
+}
+const LINK={cloud:buildLinker('cloud'), ai:buildLinker('ai')};
+function linkTerms(root,track){
+  const {map,re}=LINK[track||curTrack], used=new Set();
   root.querySelectorAll('[data-gl]').forEach(box=>{
-    const walker=document.createTreeWalker(box,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('code,pre,a,button,svg,.term,h1,h2,h3,.eyebrow,.chip')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
+    const walker=document.createTreeWalker(box,NodeFilter.SHOW_TEXT,{acceptNode:n=>n.parentElement.closest('code,pre,a,button,svg,.term,.tex,mjx-container,h1,h2,h3,.eyebrow,.chip')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
     const nodes=[]; while(walker.nextNode()) nodes.push(walker.currentNode);
     nodes.forEach(node=>{
-      const text=node.nodeValue; aliasRe.lastIndex=0; let m, last=0, frag=null;
-      while((m=aliasRe.exec(text))){
-        const e=aliasMap.get(m[1]); if(!e||used.has(e.i)) continue;
+      const text=node.nodeValue; re.lastIndex=0; let m, last=0, frag=null;
+      while((m=re.exec(text))){
+        const e=map.get(m[1]); if(!e||used.has(e.i)) continue;
         used.add(e.i); frag=frag||document.createDocumentFragment();
         frag.appendChild(document.createTextNode(text.slice(last,m.index)));
         const b=document.createElement('button'); b.type='button'; b.className='term'; b.dataset.g=e.i; b.textContent=m[1]; frag.appendChild(b);
@@ -396,15 +502,14 @@ function linkTerms(root){
 const tip=document.getElementById('gtip'); let tipFor=null, hideT=null;
 function showTip(btn){
   clearTimeout(hideT);
-  const e=GL[+btn.dataset.g], other=state.lang==='ms'?'en':'ms';
-  const see=e.see&&byId[e.see]?byId[e.see]:null;
+  const e=GL[+btn.dataset.g], see=e.see&&byId[e.see]?byId[e.see]:null;
   tip.innerHTML='<button class="x" type="button" aria-label="'+esc(u('close'))+'">×</button><b>'+esc(e.t)+'</b><p>'+fmt(e[state.lang])+'</p>'+
     (state.lang==='ms'?'<p class="alt">EN: '+fmt(e.en)+'</p>':'')+
     (see?'<a href="#'+see.id+'">'+esc(u('learnMore'))+' '+esc(unit(see))+' '+see.num+' →</a>':'');
   tip.hidden=false; tipFor=btn;
   if(innerWidth>600){
     const r=btn.getBoundingClientRect(), w=Math.min(340,innerWidth-24); tip.style.width=w+'px';
-    let left=Math.min(Math.max(12,r.left),innerWidth-w-12); tip.style.left=left+'px';
+    tip.style.left=Math.min(Math.max(12,r.left),innerWidth-w-12)+'px';
     const h=tip.offsetHeight; let top=r.bottom+8; if(top+h>innerHeight-12) top=Math.max(12,r.top-h-8); tip.style.top=top+'px';
   } else { tip.style.width=''; }
 }
@@ -423,20 +528,23 @@ document.addEventListener('keydown',e=>{ if(e.key==='Escape') hideTip(); });
 addEventListener('scroll',()=>{ if(!tip.hidden && innerWidth>600) hideTip(); },{passive:true});
 
 /* ---------- progress & nav ---------- */
-function progress(){
-  const done=ALL.filter(id=>state.done[id]).length, pct=Math.round(done/ALL.length*100);
-  document.getElementById('sidePct').textContent=done+' / '+ALL.length;
+function progress(track){
+  const ids=allIds(track), done=ids.filter(id=>state.done[id]).length, pct=Math.round(done/ids.length*100);
+  document.getElementById('sidePct').textContent=done+' / '+ids.length;
   document.getElementById('sideBar').style.width=pct+'%';
-  return {done,pct};
+  document.getElementById('progLabel').textContent=u('progress')+' · '+u(track==='ai'?'trackAI':'trackCloud');
+  return {done,pct,total:ids.length};
 }
-function renderNav(active){
-  let h='<a href="#overview" class="'+(active==='overview'?'on':'')+'"><span class="num">★</span><span>'+esc(u('navOverview'))+'</span><span></span></a>';
-  C.phases.forEach(ph=>{
-    h+='<div class="nav-phase'+(ph.n===0?' zero':'')+'"><h4>'+esc(u('phase'))+' '+ph.n+' · '+esc(T(ph.short))+'</h4>';
-    mods.filter(m=>m.phase===ph.n).forEach(m=>{
+function renderNav(active,track){
+  const tr=TR[track];
+  let h='<div class="tracks"><a href="#overview" class="'+(track==='cloud'?'on':'')+'">☁️ '+esc(u('trackCloud'))+'</a><a href="#ai" class="'+(track==='ai'?'on':'')+'">🧠 '+esc(u('trackAI'))+'</a></div>';
+  h+='<a href="#'+tr.home+'" class="'+(active===tr.home?'on':'')+'"><span class="num">★</span><span>'+esc(u(track==='ai'?'aiNav':'navOverview'))+'</span><span></span></a>';
+  tr.phases.forEach((ph,pi)=>{
+    h+='<div class="nav-phase'+(ph.n===0?' zero':'')+'"><h4>'+esc(u('phase'))+' '+ph.n+' · '+esc(T(ph.short||ph.title))+'</h4>';
+    tr.mods.filter(m=>m.phase===ph.n).forEach(m=>{
       h+='<a href="#'+m.id+'" class="'+(active===m.id?'on':'')+'"><span class="num">'+m.num+'</span><span>'+esc(T(m.title))+'</span><i class="tick'+(state.done[m.id]?' done':'')+'"></i></a>';
     });
-    if(ph.n===4) h+='<a href="#capstone" class="'+(active==='capstone'?'on':'')+'"><span class="num">◆</span><span>'+esc(u('capstone'))+'</span><i class="tick'+(state.done.capstone?' done':'')+'"></i></a>';
+    if(pi===tr.phases.length-1) h+='<a href="#'+tr.cap+'" class="'+(active===tr.cap?'on':'')+'"><span class="num">◆</span><span>'+esc(u(track==='ai'?'aiCapstone':'capstone'))+'</span><i class="tick'+(state.done[tr.cap]?' done':'')+'"></i></a>';
     h+='</div>';
   });
   h+='<div class="nav-phase"><a href="#glossary" class="'+(active==='glossary'?'on':'')+'"><span class="num">Aa</span><span>'+esc(u('glossary'))+'</span><span></span></a></div>';
@@ -447,7 +555,6 @@ function chrome(){
   document.querySelectorAll('[data-lang-switch] button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===state.lang));
   document.getElementById('menuBtn').textContent=u('menu');
   document.getElementById('selfPaced').textContent=u('self');
-  document.getElementById('progLabel').textContent=u('progress');
   document.getElementById('glossLink').textContent=u('glossary');
   document.getElementById('sideFoot').textContent=u('foot');
 }
@@ -481,7 +588,7 @@ function mountDiagram(host, d){
     steps.map((_,i)=>'<button class="pill" data-a="go" data-i="'+i+'" aria-label="'+esc(u('step'))+' '+(i+1)+'">'+(i+1)+'</button>').join('')+
     '<button data-a="next" aria-label="'+esc(u('next'))+'">›</button></div></div><p class="swipe">'+esc(u('swipe'))+'</p>'+
     '<div class="dia-svg">'+s+'</div><div class="dia-cap" aria-live="polite"><span class="n"></span><p data-gl></p></div>'+
-    '<div class="legend">'+kinds.map(k=>'<span class="k-'+k+'"><i></i>'+kname(k)+'</span>').join('')+'<span style="--kc:var(--pulse)"><i></i>'+(state.lang==='ms'?'permintaan / data':'request / data')+'</span>'+(steps.some(x=>x.async)?'<span style="--kc:var(--k-int)"><i></i>'+(state.lang==='ms'?'acara tak segerak':'async event')+'</span>':'')+'</div>';
+    '<div class="legend">'+kinds.map(k=>'<span class="k-'+k+'"><i></i>'+kname(k)+'</span>').join('')+'<span style="--kc:var(--pulse)"><i></i>'+(curTrack==='ai'?(state.lang==='ms'?'aliran tensor':'tensor flow'):(state.lang==='ms'?'permintaan / data':'request / data'))+'</span>'+(steps.some(x=>x.async)?'<span style="--kc:var(--k-int)"><i></i>'+(curTrack==='ai'?(state.lang==='ms'?'kecerunan / tak segerak':'gradient / async'):(state.lang==='ms'?'acara tak segerak':'async event'))+'</span>':'')+'</div>';
   const svg=host.querySelector('svg'), wrap=host.querySelector('.dia-svg'), pk=svg.querySelector('.pk'), capN=host.querySelector('.dia-cap .n'), capP=host.querySelector('.dia-cap p'), playBtn=host.querySelector('.play');
   let gen=0, cur=0, playing=false;
   function follow(onN){
@@ -495,7 +602,7 @@ function mountDiagram(host, d){
     svg.querySelectorAll('.edge').forEach(e=>e.classList.toggle('on',onE.has(e.dataset.k)));
     svg.querySelectorAll('.node').forEach(e=>e.classList.toggle('on',onN.has(e.dataset.id)));
     host.querySelectorAll('.pill').forEach((b,j)=>b.classList.toggle('on',j===i));
-    capN.textContent=u('step')+' '+(i+1)+' / '+steps.length; capP.innerHTML=fmt(st.t);
+    capN.textContent=u('step')+' '+(i+1)+' / '+steps.length; capP.innerHTML=fmt(st.t); typeset(capP);
     follow(onN);
   }
   const wait=ms=>new Promise(r=>setTimeout(r,ms));
@@ -553,8 +660,22 @@ function plainBox(sm){
     '<div>'+(sm.plain?'<span class="eyebrow">'+esc(u('plain'))+'</span><p>'+fmt(sm.plain)+'</p>':'')+
     '<div class="'+(sm.plain?'whyline':'')+'"><span class="eyebrow">'+esc(u('why'))+'</span><p>'+fmt(sm.why)+'</p></div></div></section>';
 }
-function labBody(L){
-  return '<div class="lab"><div class="lab-head" data-gl><h3>'+esc(T(L.title))+'</h3><p>'+fmt(L.goal)+'</p></div>'+
+function mathSection(m){
+  if(!m.math) return '';
+  return '<section class="sec"><div class="sec-head"><h2>'+esc(u('mathTitle'))+'</h2><span class="chip">'+esc(u('mathChip'))+'</span></div><div class="maths">'+
+    m.math.map(f=>'<article class="mcard"><h3>'+esc(f.name)+'</h3><div class="mdisp">'+fmt(f.tex)+'</div><p data-gl>'+fmt(f.explain)+'</p>'+
+      (f.worked?'<div class="worked"><span class="eyebrow">'+esc(u('worked'))+'</span><ol>'+f.worked.map(w=>'<li><span class="wl">'+fmt(w[0])+'</span>'+(w[1]?'<span class="wn">'+fmt(w[1])+'</span>':'')+'</li>').join('')+'</ol></div>':'')+'</article>').join('')+
+    '</div><p class="note mathnote" hidden>'+esc(u('mathNote'))+'</p></section>';
+}
+function calcSection(m){
+  if(!m.calc) return '';
+  return '<section class="sec"><div class="sec-head"><h2>'+esc(u('liveTitle'))+': '+esc(m.calc.title)+'</h2><span class="chip">'+esc(u('liveChip'))+'</span></div><p class="lede calc-intro">'+fmt(m.calc.intro)+'</p><div class="calc" data-calc="'+m.calc.type+'"></div></section>';
+}
+function labBody(L,nb){
+  const nbBtns=nb?'<div class="row nb">'+
+    '<a class="btn primary sm" href="https://colab.research.google.com/github/'+REPO+'/blob/main/notebooks/'+nb+'" target="_blank" rel="noopener">▶ '+esc(u('nbOpen'))+'</a>'+
+    '<a class="btn sm" href="https://github.com/'+REPO+'/blob/main/notebooks/'+nb+'" target="_blank" rel="noopener">'+esc(u('nbView'))+' ↗</a><code>notebooks/'+esc(nb)+'</code></div>':'';
+  return '<div class="lab"><div class="lab-head" data-gl><h3>'+esc(T(L.title))+'</h3><p>'+fmt(L.goal)+'</p>'+nbBtns+'</div>'+
     L.steps.map((s,i)=>'<div class="lab-step"><span class="sn">'+(i+1)+'</span><div class="body"><p data-gl>'+fmt(s.t)+'</p>'+(s.c?codeBlock(s.c,s.lang||'bash'):'')+'</div></div>').join('')+
     '<div class="lab-step cleanup"><span class="sn">✕</span><div class="body"><p><strong>'+esc(u('cleanup'))+'</strong> '+fmt(L.cleanup.t)+'</p>'+(L.cleanup.c?codeBlock(L.cleanup.c,L.cleanup.lang||'bash'):'')+'</div></div></div>';
 }
@@ -565,7 +686,7 @@ function labSection(m){
   const tabs=(has.console&&has.cli)?'<div class="tabs" role="tablist">'+
     '<button role="tab" data-mode="console" aria-selected="'+(mode==='console')+'">🖱️ '+esc(u('tabConsole'))+'</button>'+
     '<button role="tab" data-mode="cli" aria-selected="'+(mode==='cli')+'">⌨️ '+esc(u('tabCli'))+'</button></div>':'';
-  return '<section class="sec" id="lab"><div class="sec-head"><h2>'+esc(u('lab'))+'</h2><span class="chip">'+esc(T(L.time))+'</span></div><div>'+tabs+labBody(L)+'</div></section>';
+  return '<section class="sec" id="lab"><div class="sec-head"><h2>'+esc(u('lab'))+'</h2><span class="chip">'+esc(T(L.time))+'</span></div><div>'+tabs+labBody(L,mode==='cli'?m.notebook:null)+'</div></section>';
 }
 function quizHTML(m){
   const saved=state.quiz[m.id]||{};
@@ -584,7 +705,7 @@ function updateScore(m){
   el.textContent=answered?right+' / '+m.quiz.length+' '+u('correctOf'):m.quiz.length+' '+u('questions');
 }
 
-function wire(view,m){
+function wire(view,m,track){
   view.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{
     const pre=b.parentNode.querySelector('pre'), txt=pre.innerText;
     const ok=()=>{ b.textContent='✓'; setTimeout(()=>b.textContent='Copy',1400); };
@@ -594,7 +715,7 @@ function wire(view,m){
   view.querySelectorAll('.tabs').forEach(t=>t.addEventListener('click',e=>{
     const b=e.target.closest('button'); if(!b) return; state.labMode=b.dataset.mode; save();
     const sec=document.getElementById('lab'); const tmp=document.createElement('div'); tmp.innerHTML=labSection(m); sec.replaceWith(tmp.firstChild);
-    const fresh=document.getElementById('lab'); wire(fresh,m); linkTerms(fresh);
+    const fresh=document.getElementById('lab'); wire(fresh,m,track); linkTerms(fresh,track); typeset(fresh);
   }));
   if(m&&m.quiz){
     view.querySelectorAll('.q').forEach(qEl=>qEl.addEventListener('click',e=>{
@@ -602,84 +723,111 @@ function wire(view,m){
       const qi=+qEl.dataset.q, oi=+b.dataset.o, q=m.quiz[qi];
       state.quiz[m.id]=state.quiz[m.id]||{}; state.quiz[m.id][qi]=oi; save();
       qEl.querySelectorAll('.opt').forEach((o,j)=>{ o.disabled=true; if(j===q.a) o.classList.add('right'); else if(j===oi) o.classList.add('wrong'); });
-      qEl.insertAdjacentHTML('beforeend',whyHTML(q,oi)); updateScore(m);
+      qEl.insertAdjacentHTML('beforeend',whyHTML(q,oi)); typeset(qEl.lastElementChild); updateScore(m);
     }));
   }
   const dn=view.querySelector('[data-done]');
   if(dn) dn.addEventListener('click',()=>{
     const id=dn.dataset.done; state.done[id]=!state.done[id]; save();
     dn.classList.toggle('done',!!state.done[id]); dn.classList.toggle('primary',!state.done[id]); dn.textContent=state.done[id]?u('done'):u('markDone');
-    renderNav(id); progress();
+    renderNav(id,track); progress(track);
   });
-  view.querySelectorAll('[data-dia]').forEach(h=>{ const d=h.dataset.dia==='capstone'?C.capstone.diagram:byId[h.dataset.dia].diagram; mountDiagram(h,d); });
+  view.querySelectorAll('[data-dia]').forEach(h=>{ const k=h.dataset.dia; const d=k==='capstone'?C.capstone.diagram:k==='ai-capstone'?C.aiCapstone.diagram:byId[k].diagram; mountDiagram(h,d); });
+  view.querySelectorAll('[data-calc]').forEach(h=>{ const f=window.AIW&&window.AIW[h.dataset.calc]; if(f){ try{ f(h); }catch(err){ h.textContent='Calculator failed to load: '+err.message; } } });
 }
 
 /* ---------- views ---------- */
 function renderOverview(){
-  const p=progress();
-  const next=ALL.find(id=>!state.done[id])||'z1';
-  const totalH=mods.reduce((a,m)=>a+m.hours,0)+C.capstone.hours;
+  const p=progress('cloud'), ids=allIds('cloud');
+  const next=ids.find(id=>!state.done[id])||'z1';
+  const totalH=cloudMods.reduce((a,m)=>a+m.hours,0)+C.capstone.hours;
   let h='<section class="hero"><span class="eyebrow">'+esc(u('eyebrow'))+'</span>'+
     '<h1>'+esc(u('h1a'))+'<em>'+esc(u('h1b'))+'</em>'+esc(u('h1c'))+'</h1>'+
     '<p class="lede" data-gl>'+fmt(C.intro)+'</p>'+
     '<div class="row">'+(p.done?'<a class="btn primary" href="#'+next+'">'+esc(u('cont'))+' →</a>':'<a class="btn primary" href="#z1">'+esc(u('startZero'))+' →</a><a class="btn" href="#m01">'+esc(u('startPro'))+'</a>')+'</div>'+
-    '<div class="facts"><div><b>'+mods.length+'</b><span>'+esc(u('fModules'))+'</span></div><div><b>~'+totalH+' h</b><span>'+esc(u('fHours'))+'</span></div><div><b>'+mods.reduce((a,m)=>a+m.quiz.length,0)+'</b><span>'+esc(u('fQs'))+'</span></div><div><b>'+(mods.length+1)+'</b><span>'+esc(u('fDias'))+'</span></div></div></section>';
+    '<div class="facts"><div><b>'+cloudMods.length+'</b><span>'+esc(u('fModules'))+'</span></div><div><b>~'+totalH+' h</b><span>'+esc(u('fHours'))+'</span></div><div><b>'+cloudMods.reduce((a,m)=>a+m.quiz.length,0)+'</b><span>'+esc(u('fQs'))+'</span></div><div><b>'+(cloudMods.length+1)+'</b><span>'+esc(u('fDias'))+'</span></div></div></section>';
+  h+='<a class="aibanner" href="#ai"><span class="eyebrow">🧠 '+esc(u('tryAI'))+'</span><span>'+esc(u('tryAIText'))+'</span><b>'+esc(u('tryAIBtn'))+'</b></a>';
   h+='<section class="newcomer"><h2>👋 '+esc(u('newTitle'))+'</h2><ol>'+C.newcomer.map(x=>'<li>'+fmt(x)+'</li>').join('')+'</ol></section>';
   h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('endUp'))+'</h2><span class="chip">Capstone</span></div><p class="lede" style="font-size:15px">'+esc(u('endUpLede'))+'</p><div class="dia" data-dia="capstone"></div></section>';
   h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('howTitle'))+'</h2></div><div class="loop">'+C.howItWorks.map(x=>'<div><b>'+esc(T(x[0]))+'</b><span>'+esc(T(x[1]))+'</span></div>').join('')+'</div></section>';
-  h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('roadmap'))+'</h2><span class="chip">'+p.done+' / '+ALL.length+' '+esc(u('complete'))+'</span></div><div class="phases">'+
-    C.phases.map(ph=>'<div class="phase'+(ph.n===0?' zero':'')+'"><header><span class="eyebrow">'+esc(u('phase'))+' '+ph.n+' · '+esc(T(ph.weeks))+'</span><h3>'+esc(T(ph.title))+'</h3><p>'+esc(T(ph.blurb))+'</p></header><ol>'+
-      mods.filter(m=>m.phase===ph.n).map(m=>'<li><a href="#'+m.id+'" class="'+(state.done[m.id]?'done':'')+'"><span class="num">'+(state.done[m.id]?'✓':m.num)+'</span><span>'+esc(T(m.title))+'</span><span class="h">'+m.hours+'h</span></a></li>').join('')+
-      (ph.n===4?'<li><a href="#capstone" class="'+(state.done.capstone?'done':'')+'"><span class="num">'+(state.done.capstone?'✓':'◆')+'</span><span>'+esc(u('capstone'))+'</span><span class="h">'+C.capstone.hours+'h</span></a></li>':'')+
-      '</ol></div>').join('')+'</div></section>';
+  h+=roadmap('cloud',p);
   h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('schedule'))+'</h2></div>'+table(C.schedule)+'</section>';
   h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('certTitle'))+'</h2><span class="chip">'+esc(u('certChip'))+'</span></div><p class="lede" style="font-size:15px">'+fmt(C.certNote)+'</p><div class="tbl-wrap"><table><thead><tr><th>'+esc(u('module'))+'</th>'+
     C.certs.map(c=>'<th title="'+esc(c.name)+'">'+esc(c.code)+'</th>').join('')+'</tr></thead><tbody>'+
-    mods.map(m=>'<tr><td><a href="#'+m.id+'">'+m.num+' '+esc(T(m.title))+'</a></td>'+C.certs.map(c=>{ const v=(m.certs||{})[c.code]; return '<td class="c">'+(v===2?'<span class="pip" aria-label="core"></span>':v===1?'<span class="pip lo" aria-label="supporting"></span>':'')+'</td>'; }).join('')+'</tr>').join('')+
+    cloudMods.map(m=>'<tr><td><a href="#'+m.id+'">'+m.num+' '+esc(T(m.title))+'</a></td>'+C.certs.map(c=>{ const v=(m.certs||{})[c.code]; return '<td class="c">'+(v===2?'<span class="pip" aria-label="core"></span>':v===1?'<span class="pip lo" aria-label="supporting"></span>':'')+'</td>'; }).join('')+'</tr>').join('')+
     '</tbody></table></div><p style="margin:0;font-size:12.5px;color:var(--muted)">'+C.certs.map(c=>'<strong>'+c.code+'</strong> '+esc(c.name)).join(' · ')+'</p></section>';
   h+='<section class="two"><div class="panel" data-gl><span class="eyebrow">'+esc(u('prereqEye'))+'</span><h3>'+esc(u('prereqTitle'))+'</h3><ul>'+C.prereqs.map(x=>'<li>'+fmt(x)+'</li>').join('')+'</ul></div>'+
     '<div class="panel" data-gl><span class="eyebrow">'+esc(u('sandboxEye'))+'</span><h3>'+esc(u('sandboxTitle'))+'</h3><ul>'+C.sandbox.map(x=>'<li>'+fmt(x)+'</li>').join('')+'</ul></div></section>';
   h+='<section class="panel"><span class="eyebrow">'+esc(u('groupEye'))+'</span><h3>'+esc(u('groupTitle'))+'</h3><ul>'+C.group.map(x=>'<li>'+fmt(x)+'</li>').join('')+'</ul></section>';
   return h;
 }
-
-function renderModule(m){
-  const ph=C.phases.find(x=>x.n===m.phase);
-  const prev=m.index>0?mods[m.index-1]:null, next=m.index<mods.length-1?mods[m.index+1]:null;
-  let h='<header class="mhead"><span class="eyebrow">'+esc(u('phase'))+' '+ph.n+' · '+esc(T(ph.title))+' · '+esc(unit(m))+' '+m.num+'</span><h1>'+esc(T(m.title))+'</h1>'+
-    '<div class="row"><span class="chip">~'+m.hours+' '+esc(u('hours'))+'</span>'+m.services.map(s=>'<span class="chip">'+esc(s)+'</span>').join('')+'</div>'+
-    '<p class="lede" data-gl>'+fmt(m.summary)+'</p>'+
-    (state.lang==='ms'&&m.phase>0?'<p class="note">'+esc(u('techNote'))+'</p>':'<p class="note">'+esc(u('tapHint'))+'</p>')+'</header>';
-  h+=plainBox(m.simple);
-  h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('byEnd'))+'</h2></div><ul class="outcomes" data-gl>'+m.outcomes.map(o=>'<li>'+fmt(o)+'</li>').join('')+'</ul></section>';
-  h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('concepts'))+'</h2></div><div class="concepts">'+m.concepts.map(c=>'<div class="concept"><b>'+esc(T(c[0]))+'</b><p data-gl>'+fmt(c[1])+'</p></div>').join('')+'</div></section>';
-  h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('flow'))+'</h2><span class="chip">'+esc(u('flowHint'))+'</span></div><div class="dia" data-dia="'+m.id+'"></div></section>';
-  if(m.compare) h+='<section class="sec"><div class="sec-head"><h2>'+esc(T(m.compare.title))+'</h2><span class="chip">'+esc(u('compareChip'))+'</span></div>'+table(m.compare,true)+'</section>';
-  h+=labSection(m);
-  h+='<section class="two"><div class="panel cost"><span class="tag">'+esc(u('costTag'))+'</span><h3>'+esc(u('costH'))+'</h3><ul class="note-list" data-gl>'+m.cost.map(x=>'<li>'+fmt(x)+'</li>').join('')+'</ul></div>'+
-    '<div class="panel secp"><span class="tag">'+esc(u('secTag'))+'</span><h3>'+esc(u('secH'))+'</h3><ul class="note-list" data-gl>'+m.security.map(x=>'<li>'+fmt(x)+'</li>').join('')+'</ul></div></section>';
-  h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('check'))+'</h2><span class="chip" id="score"></span></div>'+quizHTML(m)+'</section>';
-  h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('deeper'))+'</h2></div><div class="docs">'+m.docs.map(d=>'<a class="btn" href="'+esc(d[1])+'" target="_blank" rel="noopener">'+esc(T(d[0]))+' ↗</a>').join('')+'</div></section>';
-  h+='<div class="row"><button class="btn '+(state.done[m.id]?'done':'primary')+'" data-done="'+m.id+'">'+esc(state.done[m.id]?u('done'):u('markDone'))+'</button></div>';
-  h+='<nav class="pager">'+(prev?'<a href="#'+prev.id+'"><span>← '+esc(unit(prev))+' '+prev.num+'</span><b>'+esc(T(prev.title))+'</b></a>':'<a href="#overview"><span>← '+esc(u('back'))+'</span><b>'+esc(u('overview'))+'</b></a>')+
-    (next?'<a class="next" href="#'+next.id+'"><span>'+esc(unit(next))+' '+next.num+' →</span><b>'+esc(T(next.title))+'</b></a>':'<a class="next" href="#capstone"><span>'+esc(u('finale'))+' →</span><b>'+esc(u('capstone'))+'</b></a>')+'</nav>';
+function roadmap(track,p){
+  const tr=TR[track];
+  return '<section class="sec"><div class="sec-head"><h2>'+esc(u('roadmap'))+'</h2><span class="chip">'+p.done+' / '+p.total+' '+esc(u('complete'))+'</span></div><div class="phases">'+
+    tr.phases.map((ph,pi)=>'<div class="phase'+(ph.n===0?' zero':'')+'"><header><span class="eyebrow">'+esc(u('phase'))+' '+ph.n+' · '+esc(T(ph.weeks))+'</span><h3>'+esc(T(ph.title))+'</h3><p>'+esc(T(ph.blurb))+'</p></header><ol>'+
+      tr.mods.filter(m=>m.phase===ph.n).map(m=>'<li><a href="#'+m.id+'" class="'+(state.done[m.id]?'done':'')+'"><span class="num">'+(state.done[m.id]?'✓':m.num)+'</span><span>'+esc(T(m.title))+'</span><span class="h">'+m.hours+'h</span></a></li>').join('')+
+      (pi===tr.phases.length-1?'<li><a href="#'+tr.cap+'" class="'+(state.done[tr.cap]?'done':'')+'"><span class="num">'+(state.done[tr.cap]?'✓':'◆')+'</span><span>'+esc(u(track==='ai'?'aiCapstone':'capstone'))+'</span><span class="h">'+tr.capData.hours+'h</span></a></li>':'')+
+      '</ol></div>').join('')+'</div></section>';
+}
+function renderAIOverview(){
+  const p=progress('ai'), ids=allIds('ai'), next=ids.find(id=>!state.done[id])||'a01';
+  const totalH=aiMods.reduce((a,m)=>a+m.hours,0)+C.aiCapstone.hours;
+  let h='<section class="hero"><span class="eyebrow">'+esc(u('aiEyebrow'))+'</span>'+
+    '<h1>'+esc(u('aiH1a'))+'<em>'+esc(u('aiH1b'))+'</em>'+esc(u('aiH1c'))+'</h1>'+
+    '<p class="lede" data-gl>'+fmt(C.aiIntro)+'</p>'+
+    '<div class="row"><a class="btn primary" href="#'+next+'">'+esc(p.done?u('cont'):u('aiStart'))+' →</a><a class="btn" href="#ai-capstone">'+esc(u('aiCapstone'))+'</a></div>'+
+    '<div class="facts"><div><b>'+aiMods.length+'</b><span>'+esc(u('aiFModules'))+'</span></div><div><b>~'+totalH+' h</b><span>'+esc(u('aiFHours'))+'</span></div><div><b>'+aiMods.filter(m=>m.calc).length+'</b><span>'+esc(u('aiFCalcs'))+'</span></div><div><b>'+aiMods.filter(m=>m.notebook).length+'</b><span>'+esc(u('aiFNbs'))+'</span></div></div></section>';
+  h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('aiEndUp'))+'</h2><span class="chip">BahasaGPT-mini</span></div><p class="lede" style="font-size:15px">'+esc(u('aiEndUpLede'))+'</p><div class="dia" data-dia="ai-capstone"></div></section>';
+  h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('aiHowTitle'))+'</h2></div><div class="loop">'+C.aiHow.map(x=>'<div><b>'+esc(T(x[0]))+'</b><span>'+esc(T(x[1]))+'</span></div>').join('')+'</div></section>';
+  h+=roadmap('ai',p);
+  h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('schedule'))+'</h2></div>'+table(C.aiSchedule)+'</section>';
+  h+='<section class="two"><div class="panel" data-gl><span class="eyebrow">'+esc(u('prereqEye'))+'</span><h3>'+esc(u('aiPrereqTitle'))+'</h3><ul>'+C.aiPrereqs.map(x=>'<li>'+fmt(x)+'</li>').join('')+'</ul></div>'+
+    '<div class="panel" data-gl><span class="eyebrow">AWS</span><h3>'+esc(u('aiHwTitle'))+'</h3><ul>'+C.aiHardware.map(x=>'<li>'+fmt(x)+'</li>').join('')+'</ul></div></section>';
+  h+='<section class="panel" data-gl><span class="eyebrow">☁️ + 🧠</span><h3>'+esc(u('aiLinkTitle'))+'</h3><ul>'+C.aiLinks.map(x=>'<li>'+fmt(x)+'</li>').join('')+'</ul></section>';
   return h;
 }
 
-function renderCapstone(){
-  const k=C.capstone, last=mods[mods.length-1];
-  let h='<header class="mhead"><span class="eyebrow">'+esc(u('phase'))+' 4 · '+esc(u('finale'))+' · ~'+k.hours+' '+esc(u('hours'))+'</span><h1>'+esc(k.title)+'</h1><p class="lede" data-gl>'+fmt(k.summary)+'</p>'+(state.lang==='ms'?'<p class="note">'+esc(u('techNote'))+'</p>':'')+'</header>';
+function renderModule(m){
+  const tr=TR[m.track], ai=m.track==='ai', ph=tr.phases.find(x=>x.n===m.phase), list=tr.mods;
+  const prev=m.index>0?list[m.index-1]:null, next=m.index<list.length-1?list[m.index+1]:null;
+  const note = state.lang==='ms' ? (ai ? u('techNoteAI') : (m.phase>0 ? u('techNote') : u('tapHint'))) : u('tapHint');
+  let h='<header class="mhead"><span class="eyebrow">'+esc(u('phase'))+' '+ph.n+' · '+esc(T(ph.title))+' · '+esc(unit(m))+' '+m.num+'</span><h1>'+esc(T(m.title))+'</h1>'+
+    '<div class="row"><span class="chip">~'+m.hours+' '+esc(u('hours'))+'</span>'+m.services.map(s=>'<span class="chip">'+esc(s)+'</span>').join('')+'</div>'+
+    '<p class="lede" data-gl>'+fmt(m.summary)+'</p><p class="note">'+esc(note)+'</p></header>';
+  h+=plainBox(m.simple);
+  h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('byEnd'))+'</h2></div><ul class="outcomes" data-gl>'+m.outcomes.map(o=>'<li>'+fmt(o)+'</li>').join('')+'</ul></section>';
+  h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('concepts'))+'</h2></div><div class="concepts">'+m.concepts.map(c=>'<div class="concept"><b>'+esc(T(c[0]))+'</b><p data-gl>'+fmt(c[1])+'</p></div>').join('')+'</div></section>';
+  h+=mathSection(m);
+  h+=calcSection(m);
+  h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('flow'))+'</h2><span class="chip">'+esc(u('flowHint'))+'</span></div><div class="dia" data-dia="'+m.id+'"></div></section>';
+  if(m.compare) h+='<section class="sec"><div class="sec-head"><h2>'+esc(T(m.compare.title))+'</h2><span class="chip">'+esc(u('compareChip'))+'</span></div>'+table(m.compare,true)+'</section>';
+  h+=labSection(m);
+  h+='<section class="two"><div class="panel cost"><span class="tag">'+esc(u(ai?'computeTag':'costTag'))+'</span><h3>'+esc(u(ai?'computeH':'costH'))+'</h3><ul class="note-list" data-gl>'+m.cost.map(x=>'<li>'+fmt(x)+'</li>').join('')+'</ul></div>'+
+    '<div class="panel secp"><span class="tag">'+esc(u(ai?'pitfallTag':'secTag'))+'</span><h3>'+esc(u(ai?'pitfallH':'secH'))+'</h3><ul class="note-list" data-gl>'+m.security.map(x=>'<li>'+fmt(x)+'</li>').join('')+'</ul></div></section>';
+  h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('check'))+'</h2><span class="chip" id="score"></span></div>'+quizHTML(m)+'</section>';
+  h+='<section class="sec"><div class="sec-head"><h2>'+esc(u('deeper'))+'</h2></div><div class="docs">'+m.docs.map(d=>'<a class="btn" href="'+esc(d[1])+'" target="_blank" rel="noopener">'+esc(T(d[0]))+' ↗</a>').join('')+'</div></section>';
+  h+='<div class="row"><button class="btn '+(state.done[m.id]?'done':'primary')+'" data-done="'+m.id+'">'+esc(state.done[m.id]?u('done'):u('markDone'))+'</button></div>';
+  const capLabel=u(ai?'aiCapstone':'capstone');
+  h+='<nav class="pager">'+(prev?'<a href="#'+prev.id+'"><span>← '+esc(unit(prev))+' '+prev.num+'</span><b>'+esc(T(prev.title))+'</b></a>':'<a href="#'+tr.home+'"><span>← '+esc(u('back'))+'</span><b>'+esc(u(ai?'aiNav':'overview'))+'</b></a>')+
+    (next?'<a class="next" href="#'+next.id+'"><span>'+esc(unit(next))+' '+next.num+' →</span><b>'+esc(T(next.title))+'</b></a>':'<a class="next" href="#'+tr.cap+'"><span>'+esc(u('finale'))+' →</span><b>'+esc(capLabel)+'</b></a>')+'</nav>';
+  return h;
+}
+
+function renderCapstone(key){
+  const ai=key==='ai-capstone', tr=TR[ai?'ai':'cloud'], k=tr.capData, last=tr.mods[tr.mods.length-1];
+  const note=state.lang==='ms'?(ai?u('techNoteAI'):u('techNote')):'';
+  let h='<header class="mhead"><span class="eyebrow">'+esc(u('phase'))+' '+tr.phases[tr.phases.length-1].n+' · '+esc(u('finale'))+' · ~'+k.hours+' '+esc(u('hours'))+'</span><h1>'+esc(k.title)+'</h1><p class="lede" data-gl>'+fmt(k.summary)+'</p>'+(note?'<p class="note">'+esc(note)+'</p>':'')+'</header>';
   h+=plainBox(k.simple);
-  h+='<section class="sec"><div class="sec-head"><h2>Target architecture</h2><span class="chip">'+esc(u('flowHint'))+'</span></div><div class="dia" data-dia="capstone"></div></section>';
+  h+='<section class="sec"><div class="sec-head"><h2>'+(ai?'Pipeline':'Target architecture')+'</h2><span class="chip">'+esc(u('flowHint'))+'</span></div><div class="dia" data-dia="'+key+'"></div></section>';
   h+='<section class="two"><div class="panel" data-gl><span class="eyebrow">Functional</span><h3>What it must do</h3><ul>'+k.functional.map(x=>'<li>'+fmt(x)+'</li>').join('')+'</ul></div>'+
     '<div class="panel" data-gl><span class="eyebrow">Non-functional</span><h3>How well it must do it</h3><ul>'+k.nfr.map(x=>'<li>'+fmt(x)+'</li>').join('')+'</ul></div></section>';
   h+='<section class="sec"><div class="sec-head"><h2>Milestones</h2></div>'+table(k.milestones,true)+'</section>';
   h+='<section class="sec"><div class="sec-head"><h2>Deliverables</h2></div><ul class="outcomes" data-gl>'+k.deliverables.map(o=>'<li>'+fmt(o)+'</li>').join('')+'</ul></section>';
-  h+='<section class="sec"><div class="sec-head"><h2>Starter: architecture decision record</h2><span class="chip">docs/adr/0001.md</span></div>'+codeBlock(k.adr,'markdown')+'</section>';
+  h+='<section class="sec"><div class="sec-head"><h2>'+(ai?'Starter: model card':'Starter: architecture decision record')+'</h2><span class="chip">'+(ai?'MODEL_CARD.md':'docs/adr/0001.md')+'</span></div>'+codeBlock(k.adr,'markdown')+'</section>';
   h+='<section class="sec"><div class="sec-head"><h2>Review rubric</h2></div>'+table(k.rubric,true)+'</section>';
   h+='<div class="callout"><b>Interview tip.</b> '+fmt(k.tip)+'</div>';
-  h+='<div class="row"><button class="btn '+(state.done.capstone?'done':'primary')+'" data-done="capstone">'+esc(state.done.capstone?u('done'):u('markDone'))+'</button></div>';
-  h+='<nav class="pager"><a href="#'+last.id+'"><span>← '+esc(u('module'))+' '+last.num+'</span><b>'+esc(T(last.title))+'</b></a><a class="next" href="#glossary"><span>'+esc(u('next'))+' →</span><b>'+esc(u('glossary'))+'</b></a></nav>';
+  h+='<div class="row"><button class="btn '+(state.done[key]?'done':'primary')+'" data-done="'+key+'">'+esc(state.done[key]?u('done'):u('markDone'))+'</button></div>';
+  h+='<nav class="pager"><a href="#'+last.id+'"><span>← '+esc(unit(last))+' '+last.num+'</span><b>'+esc(T(last.title))+'</b></a><a class="next" href="#'+(ai?'overview':'ai')+'"><span>'+esc(u('next'))+' →</span><b>'+esc(u(ai?'trackCloud':'tryAI'))+'</b></a></nav>';
   return h;
 }
 
@@ -688,7 +836,7 @@ function renderGlossary(){
   let h='<header class="mhead"><span class="eyebrow">A–Z · '+items.length+'</span><h1>'+esc(u('glossaryTitle'))+'</h1><p class="lede">'+esc(u('glossaryLede'))+'</p>'+
     '<input class="gsearch" id="gq" type="search" placeholder="'+esc(u('searchTerms'))+'" aria-label="'+esc(u('searchTerms'))+'"></header>';
   h+='<div class="glist" id="glist">'+items.map(e=>{ const see=e.see&&byId[e.see]?byId[e.see]:null;
-    return '<div class="gitem" data-s="'+esc((e.t+' '+e.a.join(' ')+' '+e.en+' '+e.ms).toLowerCase())+'"><b>'+esc(e.t)+'</b><p>'+fmt(e[state.lang])+'</p>'+
+    return '<div class="gitem" data-s="'+esc((e.t+' '+e.a.join(' ')+' '+e.en+' '+e.ms).toLowerCase())+'"><b>'+esc(e.t)+(e.scope==='ai'?' <span class="chip">AI</span>':'')+'</b><p>'+fmt(e[state.lang])+'</p>'+
       '<p class="alt">'+(state.lang==='ms'?'EN: '+fmt(e.en):'BM: '+fmt(e.ms))+'</p>'+(see?'<a href="#'+see.id+'">'+esc(unit(see))+' '+see.num+' · '+esc(T(see.title))+' →</a>':'')+'</div>'; }).join('')+
     '</div><p class="note" id="gnone" hidden>'+esc(u('noTerms'))+'</p>';
   return h;
@@ -702,12 +850,15 @@ scrim.addEventListener('click',()=>setMenu(false));
 function route(keepScroll){
   hideTip(); chrome();
   const id=location.hash.slice(1), view=document.getElementById('view');
-  let active='overview', m=null;
-  if(byId[id]){ m=byId[id]; active=id; view.innerHTML=renderModule(m); }
-  else if(id==='capstone'){ active='capstone'; view.innerHTML=renderCapstone(); }
-  else if(id==='glossary'){ active='glossary'; view.innerHTML=renderGlossary(); }
-  else view.innerHTML=renderOverview();
-  renderNav(active); progress(); wire(view,m); if(m) updateScore(m); linkTerms(view);
+  let active='overview', m=null, track='cloud';
+  if(byId[id]){ m=byId[id]; active=id; track=m.track; }
+  else if(id==='capstone'){ active=id; track='cloud'; }
+  else if(id==='ai'||id==='ai-capstone'){ active=id; track='ai'; }
+  else if(id==='glossary'){ active=id; track=state.track; }
+  curTrack=track; state.track=track; save();
+  view.innerHTML = m ? renderModule(m) : id==='capstone'||id==='ai-capstone' ? renderCapstone(id) : id==='ai' ? renderAIOverview() : id==='glossary' ? renderGlossary() : renderOverview();
+  renderNav(active,track); progress(track); wire(view,m,track); if(m) updateScore(m); linkTerms(view,track); typeset(view);
+  const mn=view.querySelector('.mathnote'); if(mn) setTimeout(()=>{ if(!window.MathJax||!window.MathJax.typesetPromise) mn.hidden=false; },6000);
   const gq=document.getElementById('gq');
   if(gq) gq.addEventListener('input',()=>{ const q=gq.value.trim().toLowerCase(); let n=0;
     document.querySelectorAll('#glist .gitem').forEach(el=>{ const ok=!q||el.dataset.s.includes(q); el.hidden=!ok; if(ok) n++; });
@@ -719,6 +870,7 @@ window.addEventListener('hashchange',()=>route(false));
 route(true);
 })();
 </script>
+
 
 </body>
 </html>

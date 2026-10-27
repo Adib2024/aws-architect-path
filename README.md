@@ -1,8 +1,13 @@
 # AWS Architect Path
 
-A self-paced, bilingual (English / Bahasa Melayu) course that takes a complete beginner from "what is a server?" to designing production systems on AWS.
+A self-paced, bilingual (English / Bahasa Melayu) learning site with two tracks:
 
-**Kursus kendiri dwibahasa (Bahasa Inggeris / Bahasa Melayu) yang membawa pemula dari "apa itu server?" hingga mereka bentuk sistem produksi di AWS.**
+- **☁️ Cloud:** from "what is a server?" to designing production systems on AWS.
+- **🧠 AI Engineer Path:** from tensors and backprop to a GPT you write, train, fine-tune and serve yourself, with the math worked in numbers.
+
+**Laman pembelajaran kendiri dwibahasa dengan dua laluan: Cloud (dari kosong hingga arkitek AWS) dan Jurutera AI (dari tensor hingga GPT anda sendiri, dengan matematik dikira menggunakan nombor).**
+
+Live site: https://adib2024.github.io/aws-architect-path/
 
 ## What's inside / Kandungan
 
@@ -20,7 +25,21 @@ Every lesson has / Setiap pelajaran ada:
 - **Animated diagram** you can play or step through / **Rajah animasi** yang boleh dimainkan langkah demi langkah
 - **Two labs**: click-through (no code) and command line / **Dua makmal**: klik sahaja dan baris arahan
 - **Cost & security notes** and **practice questions** / **Nota kos & keselamatan** dan **soalan latihan**
-- A **tap-to-explain glossary** of 130+ terms / **Glosari** 130+ istilah
+- A **tap-to-explain glossary** of 180+ terms / **Glosari** 180+ istilah
+
+## AI Engineer Path
+
+University math assumed (linear algebra, calculus, probability). Every module has: derived formulas worked with real numbers, a live calculator, an animated architecture diagram, a PyTorch notebook (one click to Colab) and numeric quiz questions.
+
+| Phase | Modules |
+|---|---|
+| A1 · Learning machinery | A01 Tensors & compute model · A02 Softmax & cross-entropy · A03 SGD, momentum & Adam · A04 Backprop & autograd |
+| A2 · Deep networks | A05 Init, normalization & residuals · A06 CNNs & RNNs |
+| A3 · Transformers from scratch | A07 Tokens, embeddings & positions · A08 Attention · A09 GPT from scratch |
+| A4 · LLMs in production | A10 Training at scale on AWS · A11 SFT, LoRA & DPO · A12 Inference, quantization & serving |
+| Capstone | BahasaGPT-mini: a Malay language model trained, fine-tuned and served on AWS |
+
+Notebooks live in [`notebooks/`](notebooks/) and are generated from the course data: `node tools/make_notebooks.js`.
 
 ## Run it / Cara buka
 
@@ -46,6 +65,10 @@ python3 -m http.server 8000   # then open http://localhost:8000
 | `phase0.js` | Phase 0 lessons (bilingual) / Pelajaran Fasa 0 (dwibahasa) |
 | `course-a.js`, `course-b.js` | Modules 01–19 and the capstone / Modul 01–19 dan capstone |
 | `beginner.js` | Analogies and click-through labs for modules 01–19 (bilingual) / Analogi dan makmal klik |
+| `ai-a.js`, `ai-b.js` | AI track modules A01–A12 and the AI capstone / Modul laluan AI |
+| `ai-widgets.js` | Live calculators for the AI track / Kalkulator langsung |
+| `notebooks/` | PyTorch notebooks (generated) / Notebook PyTorch |
+| `tools/` | `make_notebooks.js` (notebooks), `build_artifact.py` (claude.ai version) |
 | `glossary.js` | Glossary terms (bilingual) / Istilah glosari |
 | `i18n.js` | Interface text and overview content (bilingual) / Teks antara muka |
 
