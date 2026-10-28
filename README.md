@@ -23,7 +23,7 @@ Every lesson has / Setiap pelajaran ada:
 
 - **In plain words** with a real-life analogy / **Dalam bahasa mudah** dengan analogi kehidupan
 - **Animated diagram** you can play, step through, slow down and click into / **Rajah animasi** yang boleh dimainkan, diikuti langkah demi langkah, diperlahankan dan diklik
-- **Interactive calculators** on key modules: IAM policy evaluation, subnet planning, auto scaling, CDN caching, DR strategy and monthly cost / **Kalkulator interaktif** untuk modul utama
+- **An interactive calculator in every lesson and module**: e.g. own servers vs cloud, page-load round trips, IAM policy evaluation, subnet planning, DynamoDB capacity, infrastructure plan review, queue backlog, canary rollouts, SLO error budgets, real envelope encryption, Athena scan cost / **Kalkulator interaktif dalam setiap pelajaran dan modul**
 - **Two labs**: click-through (no code) and command line / **Dua makmal**: klik sahaja dan baris arahan
 - **Cost & security notes** and **practice questions** / **Nota kos & keselamatan** dan **soalan latihan**
 - A **tap-to-explain glossary** of 180+ terms / **Glosari** 180+ istilah
@@ -68,7 +68,7 @@ python3 -m http.server 8000   # then open http://localhost:8000
 | `beginner.js` | Analogies and click-through labs for modules 01–19 (bilingual) / Analogi dan makmal klik |
 | `ai-a.js`, `ai-b.js` | AI track modules A01–A12 and the AI capstone / Modul laluan AI |
 | `ai-widgets.js` | Live calculators for the AI track / Kalkulator langsung |
-| `cloud-widgets.js` | Interactive calculators for the cloud track / Kalkulator laluan cloud |
+| `cloud-widgets.js`, `cloud-widgets2.js` | Interactive calculators for every cloud lesson and module / Kalkulator laluan cloud |
 | `notebooks/` | PyTorch notebooks (generated) / Notebook PyTorch |
 | `tools/` | `make_notebooks.js` (notebooks), `build_artifact.py` (claude.ai version) |
 | `glossary.js` | Glossary terms (bilingual) / Istilah glosari |
