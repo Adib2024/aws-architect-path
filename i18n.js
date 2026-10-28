@@ -204,4 +204,11 @@ C.aiSchedule = {
     ["13–15", "AI Capstone", s("BahasaGPT-mini: your own Malay language model, end to end", "BahasaGPT-mini: model bahasa Melayu anda sendiri, dari awal hingga akhir")]
   ]
 };
+
+Object.assign(C.ui.en, { modulesHead: "Modules", trackAIlong: "AI Engineer", duration: "Duration", topics: "Topics", stepThrough: "Step through", nextStep: "Next step", showAll: "Show all", again: "Start again",
+  speed: "Animation speed", nodeHint: "Tip: select any box in the diagram to see what it connects to and which steps use it.", connected: "connects to", inSteps: "used in steps", onPage: "On this page",
+  self: "Self-paced learning portal", menu: "Modules" });
+Object.assign(C.ui.ms, { modulesHead: "Modul", trackAIlong: "Jurutera AI", duration: "Tempoh", topics: "Topik", stepThrough: "Ikut langkah", nextStep: "Langkah seterusnya", showAll: "Tunjuk semua", again: "Mula semula",
+  speed: "Kelajuan animasi", nodeHint: "Tip: pilih mana-mana kotak dalam rajah untuk melihat sambungannya dan langkah yang menggunakannya.", connected: "bersambung ke", inSteps: "digunakan dalam langkah", onPage: "Dalam halaman ini",
+  self: "Portal pembelajaran kendiri", menu: "Modul" });
 })(window.COURSE);

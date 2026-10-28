@@ -310,5 +310,6 @@ W.kvcache = host => {
   });
 };
 
+W._h = { num, rng, sel, chk, btn, read, setv, shell, kv, bar, pill, live, sig, big, int, bytes, secs, canvas, tok, esc };
 window.AIW = W;
 })();

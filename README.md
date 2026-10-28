@@ -2,8 +2,8 @@
 
 A self-paced, bilingual (English / Bahasa Melayu) learning site with two tracks:
 
-- **☁️ Cloud:** from "what is a server?" to designing production systems on AWS.
-- **🧠 AI Engineer Path:** from tensors and backprop to a GPT you write, train, fine-tune and serve yourself, with the math worked in numbers.
+- **Cloud:** from "what is a server?" to designing production systems on AWS.
+- **AI Engineer Path:** from tensors and backprop to a GPT you write, train, fine-tune and serve yourself, with the math worked in numbers.
 
 **Laman pembelajaran kendiri dwibahasa dengan dua laluan: Cloud (dari kosong hingga arkitek AWS) dan Jurutera AI (dari tensor hingga GPT anda sendiri, dengan matematik dikira menggunakan nombor).**
 
@@ -22,7 +22,8 @@ Live site: https://adib2024.github.io/aws-architect-path/
 Every lesson has / Setiap pelajaran ada:
 
 - **In plain words** with a real-life analogy / **Dalam bahasa mudah** dengan analogi kehidupan
-- **Animated diagram** you can play or step through / **Rajah animasi** yang boleh dimainkan langkah demi langkah
+- **Animated diagram** you can play, step through, slow down and click into / **Rajah animasi** yang boleh dimainkan, diikuti langkah demi langkah, diperlahankan dan diklik
+- **Interactive calculators** on key modules: IAM policy evaluation, subnet planning, auto scaling, CDN caching, DR strategy and monthly cost / **Kalkulator interaktif** untuk modul utama
 - **Two labs**: click-through (no code) and command line / **Dua makmal**: klik sahaja dan baris arahan
 - **Cost & security notes** and **practice questions** / **Nota kos & keselamatan** dan **soalan latihan**
 - A **tap-to-explain glossary** of 180+ terms / **Glosari** 180+ istilah
@@ -67,6 +68,7 @@ python3 -m http.server 8000   # then open http://localhost:8000
 | `beginner.js` | Analogies and click-through labs for modules 01–19 (bilingual) / Analogi dan makmal klik |
 | `ai-a.js`, `ai-b.js` | AI track modules A01–A12 and the AI capstone / Modul laluan AI |
 | `ai-widgets.js` | Live calculators for the AI track / Kalkulator langsung |
+| `cloud-widgets.js` | Interactive calculators for the cloud track / Kalkulator laluan cloud |
 | `notebooks/` | PyTorch notebooks (generated) / Notebook PyTorch |
 | `tools/` | `make_notebooks.js` (notebooks), `build_artifact.py` (claude.ai version) |
 | `glossary.js` | Glossary terms (bilingual) / Istilah glosari |

@@ -404,8 +404,8 @@ M({
   services: ["chain rule", "computational graph", "reverse-mode AD", "Jacobians", "gradient checking"],
   summary: "Backprop is the chain rule applied in reverse over a graph, reusing intermediate results so all gradients cost about as much as one extra forward pass. You'll compute it by hand with numbers, then build a tiny autograd engine and derive matrix gradients for an MLP.",
   simple: {
-    analogy: s("A factory produced a faulty product. Backprop walks backwards along the assembly line asking each station: how much did *you* contribute to the error? Each station only needs to know its own inputs and the blame passed to it from the next station.",
-      "Sebuah kilang menghasilkan produk rosak. Backprop berjalan ke belakang sepanjang barisan pemasangan dan bertanya kepada setiap stesen: berapa banyak *anda* menyumbang kepada ralat? Setiap stesen hanya perlu tahu input sendiri dan kesalahan yang dihantar daripada stesen seterusnya."),
+    analogy: s("A factory produced a faulty product. Backprop walks backwards along the assembly line asking each station: how much did you contribute to the error? Each station only needs to know its own inputs and the blame passed to it from the next station.",
+      "Sebuah kilang menghasilkan produk rosak. Backprop berjalan ke belakang sepanjang barisan pemasangan dan bertanya kepada setiap stesen: berapa banyak anda menyumbang kepada ralat? Setiap stesen hanya perlu tahu input sendiri dan kesalahan yang dihantar daripada stesen seterusnya."),
     plain: s("To improve a network you need the gradient of the loss with respect to every weight. Backprop computes all of them efficiently in one backward pass using the chain rule.",
       "Untuk memperbaiki rangkaian, anda perlukan kecerunan kerugian terhadap setiap pemberat. Backprop mengira semuanya dengan cekap dalam satu laluan ke belakang menggunakan petua rantai."),
     why: s("Every deep-learning framework is an autograd engine. Understanding it is how you debug exploding gradients, memory blow-ups and custom layers.",

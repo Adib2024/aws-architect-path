@@ -347,7 +347,7 @@ Z({
     "Resource": "arn:aws:s3:::YOUR-BUCKET-NAME/*"
   }]
 }`, lang: "json" },
-      { t: { en: "Back on **Properties**, copy the **Bucket website endpoint** link at the bottom. Open it on your phone. You're live! 🎉", ms: "Kembali ke **Properties**, salin pautan **Bucket website endpoint** di bahagian bawah. Buka di telefon anda. Laman anda sudah di internet! 🎉" } }
+      { t: { en: "Back on **Properties**, copy the **Bucket website endpoint** link at the bottom. Open it on your phone. You're live!", ms: "Kembali ke **Properties**, salin pautan **Bucket website endpoint** di bahagian bawah. Buka di telefon anda. Laman anda sudah di internet!" } }
     ],
     cleanup: { t: { en: "Select the bucket → **Empty** → type the confirmation → then **Delete** the bucket. Public buckets shouldn't be left lying around.", ms: "Pilih bucket → **Empty** → taip pengesahan → kemudian **Delete** bucket. Bucket awam tidak patut dibiarkan begitu sahaja." } }
   },
